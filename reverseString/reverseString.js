@@ -17,3 +17,15 @@ const reverseString = function(txt) {
 module.exports = reverseString
 
 
+//another, perhaps neater, way the above can be done is:
+
+
+// const reverseString = function(txt) {
+
+//     for (i = 0; i < txt.length; i++) {
+//         reversedString = txt.split("").reverse().join("");
+//         return reversedString;
+//     }
+// }
+
+// module.exports = reverseString
