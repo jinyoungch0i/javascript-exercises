@@ -1,24 +1,14 @@
-// const repeatString = function() {
-
-// }
-
-// module.exports = repeatString
-
-function capitalize(string) {
-    str = string.toLowerCase();
-    first = str[0].toUpperCase();
-    capitalized = first + str.slice(1);
-    console.log(capitalized);
+const repeatString = function(word, times) {
+    if (times < 0) {
+        return "ERROR";
+    }
+    let string = '';
+    for(let i = 0; i < times; i++) {
+        string += word
+    }
+    return string
 }
 
-capitalize('bOrAT'); //returns: Borat
+module.exports = repeatString
 
-function lastLetter(streeng) {
-    last = streeng.slice(-1);
-    console.log(last);
-}
-
-lastLetter("Westwood"); //returns: 'd'
-lastLetter("abcd"); //returns: 'd'
-
-
+//this had to be looked up; check in on this again...
